@@ -2,10 +2,10 @@
 
 int maximum (int *p, int index)
 {
-    int max;
+    int max = 0;
     if(index < 0) return max;
 
-    maximum (p, index -1);
+    max = maximum (p, index -1);
     if( *(p+index) > max)
     {
         max = *(p+index);
